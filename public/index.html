@@ -4,13 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LED Dashboard</title>
-        <script src="mqtt.js"></script>
+        <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
         <script defer src="dashboard.js"></script>
 
     </head>
     <body>
         <h1>ESP32 Led Control</h1>
-        <button id="onButton">Turn ON</button>
-        <button id="offButton">Turn OFF</button>
+        <button id="turnOn">Turn ON</button>
+        <button id="turnOff">Turn OFF</button>
+
+        <p>Status: <span id="ledStatus">Unknown</span></p>
     </body>
 </html>
